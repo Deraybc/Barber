@@ -12,11 +12,11 @@ export default function NavBar() {
     };
 
     const navItems = [
-        { name: "Inicio", href: "#", },
-        { name: "Servicios", href: "#servicios" },
-        { name: "Nosotros", href: "#nosotros" },
-        { name: "Galería", href: "#galeria" },
-        { name: "Contacto", href: "#contacto" }
+        { name: "Inicio", href: "/"},
+        { name: "Servicios", href: "/servicios" },
+        { name: "Nosotros", href: "/nosotros" },
+        { name: "Galería", href: "/galeria" },
+        { name: "Contacto", href: "/contacto" }
     ];
 
     return (
@@ -69,7 +69,7 @@ export default function NavBar() {
                         {/* CTA Buttons Desktop */}
                         <div className="hidden md:flex items-center space-x-3">
                             <a
-                                href="tel:+123456789"
+                                href="tel:+34666188934"
                                 className="flex items-center space-x-2 text-gray-300 hover:text-red-400 transition-colors duration-300 px-3 py-2 rounded-lg hover:bg-gray-800/50"
                             >
                                 <Phone className="h-4 w-4" />

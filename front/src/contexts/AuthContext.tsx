@@ -67,14 +67,14 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 
     useEffect(() => {
         checkAuth();
-
-        socket.on('new_notifications', (data) => {
-            console.log(data)
-        });
-
-        return () => {
-            socket.off('new_notifications');
-        };
+        /*
+                socket.on('new_notifications', (data) => {
+                    console.log(data)
+                });
+        
+                return () => {
+                    socket.off('new_notifications');
+                };*/
     }, [])
 
     const login = (token: string, userDataObj: User, notifications: any[]) => {

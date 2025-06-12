@@ -33,7 +33,6 @@ export const LoaderProvider = ({ children }: LoaderProviderProps) => {
     return (
         <LoaderContext.Provider value={{ isLoading, showLoader, hideLoader }}>
             {children}
-
             {isLoading && <LoaderComponent />}
         </LoaderContext.Provider>
     );

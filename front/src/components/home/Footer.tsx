@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-bold mb-6">Contacto</h3>
+                        <h3 className="text-lg font-bold mb-6">Recursos</h3>
                         <ul className="space-y-3">
                             <li>
                                 <a href="#" className="text-gray-600 hover:text-black transition-colors duration-300">
@@ -55,12 +55,6 @@ const Footer: React.FC = () => {
                                     Precios
                                 </a>
                             </li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h3 className="text-lg font-bold mb-6">Recursos</h3>
-                        <ul className="space-y-3">
                             <li>
                                 <a href="#" className="text-gray-600 hover:text-black transition-colors duration-300">
                                     Reseñas
@@ -68,6 +62,8 @@ const Footer: React.FC = () => {
                             </li>
                         </ul>
                     </div>
+
+
                 </div>
 
                 <div className="border-t border-gray-200 pt-8">

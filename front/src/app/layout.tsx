@@ -5,6 +5,7 @@ import NavBar from "@/components/navBar/navBar";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { Toaster } from "sonner";
 import { LoaderProvider } from "@/contexts/LoaderContext";
+import Footer from "@/components/home/Footer";
 
 export const metadata: Metadata = {
   title: "Kyomu Barber Studio",
@@ -21,12 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={inter.className}
+        className={`${inter.className} min-h-screen flex flex-col `}
       >
+        {/* <body className={`${inter.className} min-h-screen flex flex-col`}> */}
         <AuthProvider>
-          <NavBar />
           <LoaderProvider>
-            <main>{children}</main>
+            <NavBar />
+            <main className="flex-1 bg-black">{children}</main>
+            <Footer />
           </LoaderProvider>
           <Toaster />
         </AuthProvider>

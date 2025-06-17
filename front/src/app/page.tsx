@@ -1,14 +1,14 @@
 import React from 'react';
-import Footer from '@/components/home/Footer';
 import Hero from '@/components/home/Hero';
 import People from '@/components/home/People';
+import Waiting from '@/components/home/Waiting';
 
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       <Hero />
       <People />
-      <Footer />
+      <Waiting />
     </div>
   );
 };
